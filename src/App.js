@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import counter from './assets/counter.png';
+import timer from './assets/timer.png'
 import liste from './assets/liste.png';
 import './App.css';
 import Counter from './composents/Counter';
 import Liste from './composents/Liste';
+import Timer from './composents/Timer';
 
 function App() {
 
@@ -58,10 +60,31 @@ function App() {
          pour extraire les 5 premiers produits du tableau products.Cela limitera le nombre de produits 
          affichés à 5 dans votre composant. Les autres produits, s'ils existent, ne seront pas affichés.
          J'ai veillé à importer useState et useEffect depuis React pour que ce code fonctionne 
-         correctement. Nous pouvons remplacer l'URL de l'API par une URL réelle si nous avons une API à utiliser."
+         correctement. Nous pouvons remplacer l'URL de l'API par une URL réelle si nous avons une API à utiliser.
       </p>
       <p>---------------------------------------------------------</p>
 
+      <h3>**Exercice 3 : Gestion d'une minuterie avec useEffect**</h3>
+      <p>
+      Créez un composant React qui affiche une minuterie. Utilisez useEffect pour démarrer une minuterie
+      lorsque le composant est monté. La minuterie doit être mise à jour toutes les secondes,
+      et le composant doit afficher le temps écoulé.
+      </p>
+      <Timer/>
+      <h4>Structure du code</h4>
+      <img src={timer} alt='counter' />
+      <h4>Explications</h4>
+      <p className='border'>
+        Dans ce composant React, j'utilise le hook useState pour gérer l'état des secondes (seconds). 
+        Ensuite, j'utilise le hook useEffect pour démarrer une minuterie en utilisant setInterval, 
+        qui incrémente les secondes de 1 à chaque intervalle de 1000 ms (1 seconde).
+        Le retour de ma fonction de nettoyage clearInterval(interval) permet d'arrêter la minuterie 
+        lorsque le composant est démonté(rafraîchissement de la page), évitant ainsi les fuites de mémoire.
+        Lorsque j'utilise ce composant, je vois une minuterie en cours d'exécution qui met à jour 
+        les secondes toutes les secondes, affichant le temps écoulé. J'ai également ajouté un bouton 
+        avec le texte "Remettre à zéro" et un gestionnaire d'événements onClick qui appelle ma fonction resetTimer. 
+        Cette fonction réinitialise la valeur de seconds à zéro lorsque le bouton est cliqué, remettant ainsi le compteur à zéro.
+      </p>
     </div>
   );
 }
