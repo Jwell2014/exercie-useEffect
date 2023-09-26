@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Counter from './composents/Counter';
 
 function App() {
   return (
@@ -7,19 +8,19 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Exercices pour apprendre a utiliser le hook useEffect
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <h3>**Exercice 1 : Utilisation de useEffect avec un compteur**</h3>
+        <p>
+          Créez un composant React qui affiche un compteur initialisé à zéro. 
+          Utilisez useEffect pour mettre à jour le titre de la page avec la 
+          valeur actuelle du compteur chaque fois que le compteur change.
+        </p>
+      <Counter />
     </div>
   );
 }
+
 
 export default App;
