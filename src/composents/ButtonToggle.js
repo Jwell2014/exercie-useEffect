@@ -10,7 +10,9 @@ function ButtonToggle({ title, content }) {
   return (
     <div>
       <h4>{title}</h4>
-      <button onClick={toggleContent}>Afficher/Masquer</button>
+      <button className='btnvalid' onClick={toggleContent}>
+      {showContent ? 'Masquer' : 'Afficher'}
+      </button>
       {showContent && <div>{content}</div>}
     </div>
   );

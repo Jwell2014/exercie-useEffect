@@ -30,7 +30,7 @@ function Form(){
       };
 
     return (
-        <div>
+        <div className="fond">
             <form onSubmit={handleSubmit} >
                 <div>
                     <label>Nom</label>

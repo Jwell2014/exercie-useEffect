@@ -13,7 +13,7 @@
   background-color: #282c34;
   color: white;
   border-radius: 20px;
-  width: 30%;
+
 }
 
 .border {
@@ -39,6 +39,16 @@ h1{
   padding: 10px;
   border-radius: 20px;
 }
+
+h2{
+  background-color: #282c34;
+  height: 60px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
