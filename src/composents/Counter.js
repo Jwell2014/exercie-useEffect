@@ -11,7 +11,7 @@ function Counter() {
   }, [count]); // useEffect sera déclenché chaque fois que 'count' change
 
   return (
-    <div className="counter">
+    <div className="fond">
       <h1>Compteur</h1>
       <p>Valeur du compteur : {count}</p>
       <button onClick={() => setCount(count + 1)}>➕</button>
