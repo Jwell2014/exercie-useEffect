@@ -7,6 +7,10 @@ function Counter() {
   useEffect(() => {
     // Mettre à jour le titre de la page avec la valeur du compteur
     document.title = `Compteur : ${count}`;
+     // Cette fonction sera exécutée lorsque le composant sera démonté
+     return () => {
+      document.title = 'Application React'; // Rétablir le titre de la page
+    };
   }, [count]); // useEffect sera déclenché chaque fois que 'count' change
 
   return (

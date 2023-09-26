@@ -13,7 +13,7 @@
   background-color: #282c34;
   color: white;
   border-radius: 20px;
-  text-align: start;
+  width: 30%;
 }
 
 .border {
@@ -29,6 +29,16 @@ h1{
   margin-bottom: 50px;
 }
 
+.sousTitre{
+  margin: 20px;
+}
+
+.btnvalid {
+  background: green;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
