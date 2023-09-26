@@ -1,16 +1,19 @@
 import logo from './logo.svg';
+import counter from './assets/counter.png';
+import liste from './assets/liste.png';
 import './App.css';
 import Counter from './composents/Counter';
 import Liste from './composents/Liste';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <h2>
           Exercices pour apprendre a utiliser le hook useEffect
-        </p>
+        </h2>
       </header>
 
       <h3>**Exercice 1 : Utilisation de useEffect avec un compteur**</h3>
@@ -20,8 +23,10 @@ function App() {
           valeur actuelle du compteur chaque fois que le compteur change.
         </p>
       <Counter />
+      <h4>Structure du code</h4>
+      <img src={counter} alt='counter' />
       <h4>Explications</h4>
-      <p>Dans ce composant React, j'utilise le hook useState pour gérer l'état du compteur (count). 
+      <p className='border'>Dans ce composant React, j'utilise le hook useState pour gérer l'état du compteur (count). 
         Ensuite, j'utilise le hook useEffect pour mettre à jour le titre de la page chaque fois 
         que la valeur de count change. L'effet nettoie également le titre de la page lorsque le composant est démonté.
         J'importe bien sûr useState et useEffect depuis React pour que ce code fonctionne correctement.
@@ -39,8 +44,10 @@ function App() {
         l'API lorsque le composant est monté et affichez-les dans le composant.
       </p>
       <Liste/>
+      <h4>Structure du code</h4>
+      <img src={liste} alt='counter' />
       <h4>Explications</h4>
-      <p>
+      <p className='border'>
          J'ai utilisé le hook useState pour gérer l'état des produits (products) 
          et un état de chargement (loading). J'ai également utilisé le hook useEffect 
          pour charger les données depuis une API fictive lorsque le composant est monté.

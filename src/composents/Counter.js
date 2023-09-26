@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '../App.css';
 
 
 function Counter() {
@@ -13,7 +12,7 @@ function Counter() {
   return (
     <div className="fond">
       <h1>Compteur</h1>
-      <p>Valeur du compteur : {count}</p>
+      <h2>Valeur du compteur : {count}</h2>
       <button onClick={() => setCount(count + 1)}>➕</button>
       <button onClick={() => setCount(count - 1)}>➖</button>
 
