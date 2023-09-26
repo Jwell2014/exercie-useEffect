@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function ToggleBlock({ title, content }) {
+function ButtonToggle({ title, content }) {
   const [showContent, setShowContent] = useState(false);
 
   const toggleContent = () => {
@@ -16,4 +16,4 @@ function ToggleBlock({ title, content }) {
   );
 }
 
-export default ToggleBlock;
+export default ButtonToggle;

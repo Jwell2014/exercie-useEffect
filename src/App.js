@@ -8,7 +8,8 @@ import Counter from './composents/Counter';
 import Liste from './composents/Liste';
 import Timer from './composents/Timer';
 import Form from './composents/Form';
-import ToggleBlock from './composents/ToggleBlock'
+import ButtonToggle from './composents/ButtonToggle';
+
 function App() {
 
   const [showDetails, setShowDetails] = useState(false);
@@ -68,7 +69,7 @@ function App() {
           </div>
         </div>
       )}
-       <ToggleBlock
+       <ButtonToggle
         title="Resultat attendu"
         content={<Counter />}
       />
