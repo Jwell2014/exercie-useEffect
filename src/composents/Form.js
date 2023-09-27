@@ -37,16 +37,16 @@ function Form() {
   return (
     <div className="fond">
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Nom</label>
+        <div style={{display: 'flex', flexDirection:'column'}}>
+          <label style={{margin:10}}>Nom</label>
           <input 
             type='text'
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           ></input>
         </div>
-        <div>
-          <label>Login</label>
+        <div style={{display: 'flex', flexDirection:'column'}}>
+          <label style={{margin:10}}>Login</label>
           <input
             type='text'
             value={login}
@@ -59,7 +59,7 @@ function Form() {
             <p style={{ textDecorationLine: "line-through" }}>Se Connecter</p>
           </>
         ) : (
-          <button type="submit">Se Connecter</button>
+          <button className='btnvalid' style={{marginTop:40}} type="submit">Se Connecter</button>
         )}
       </form>
     </div>

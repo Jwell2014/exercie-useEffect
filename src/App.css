@@ -38,6 +38,18 @@ h1{
   color: white;
   padding: 10px;
   border-radius: 20px;
+  min-width: 150px;
+}
+
+.btnheader {
+  background: #61dafb;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  min-width: 200px;
+  min-height: 50px;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 h2{
